@@ -25,6 +25,8 @@ gulp.task('bs-reload', function () {
     browserSync.reload();
 });
 
+gulp.task('compile', ['sass', 'js']);
+
 gulp.task('default', ['sass', 'js', 'browser-sync'], function () {
     gulp.watch("src/scss/*.scss", ['sass']);
     gulp.watch("js/*.js", ['js']);

@@ -10,7 +10,8 @@
     "gulp-sass": "1.2.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "gulp compile"
   },
   "repository": {
     "type": "git",
