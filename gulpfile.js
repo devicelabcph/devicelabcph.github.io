@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var jade = require('gulp-jade');
 var browserSync = require('browser-sync');
 
 gulp.task('sass', function () {
@@ -21,14 +22,22 @@ gulp.task('browser-sync', function() {
     });
 });
 
+gulp.task('jade', function() {
+    gulp.src('./src/**/*.jade')
+        .pipe(jade())
+        .pipe(gulp.dest('./'));
+});
+
 gulp.task('bs-reload', function () {
     browserSync.reload();
 });
 
-gulp.task('compile', ['sass', 'js']);
+gulp.task('compile', ['sass', 'js', 'jade']);
 
-gulp.task('default', ['sass', 'js', 'browser-sync'], function () {
+
+gulp.task('default', ['sass', 'js', 'jade', 'browser-sync'], function () {
     gulp.watch("src/scss/*.scss", ['sass']);
     gulp.watch("js/*.js", ['js']);
     gulp.watch("*.html", ['bs-reload']);
+    gulp.watch("src/*.jade", ['jade']);
 });
