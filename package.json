@@ -1,0 +1,25 @@
+{
+  "name": "devicelabcph.github.io",
+  "version": "0.1.0",
+  "description": "Open Device Lab Copenhagen",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "1.6.2",
+    "browserify": "6.2.0",
+    "gulp": "3.8.9",
+    "gulp-sass": "1.2.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devicelabcph/devicelabcph.github.io"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devicelabcph/devicelabcph.github.io/issues"
+  },
+  "homepage": "https://github.com/devicelabcph/devicelabcph.github.io"
+}
