@@ -326,7 +326,8 @@ td, th {
 
 .wrapper {
   width: 90%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  max-width: 1000px; }
 
 .grid {
   margin: 0; }
@@ -364,11 +365,23 @@ td, th {
     padding-right: 20px; }
 
 .hero {
-  height: 100vh;
-  background: #ededed; }
+  height: 55vh;
+  background: #EDEDED;
+  background-image: url(http://designtoimprovelife.dk/wp-content/uploads/2011/03/nyhavn.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center; }
+  .hero h1 {
+    font-size: 3.5em;
+    margin: 0;
+    padding: 60px 0 0;
+    color: #FF4136; }
+  .hero h2 {
+    font-size: 2em; }
 
 .description {
-  background: #ababab; }
+  color: #FFF;
+  background: #FF4136; }
 
 .wishlist {
   background: #ededed; }
@@ -377,7 +390,11 @@ td, th {
   background: #ededed; }
 
 .find-us {
-  background: #363636; }
+  height: 200px;
+  margin-top: 30px;
+  background: #363636;
+  padding: 20px 0;
+  color: #CCC; }
 
 body {
   background: white; }
