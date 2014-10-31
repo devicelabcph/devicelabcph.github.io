@@ -1,3 +1,4 @@
+var fs = require('fs');
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var jade = require('gulp-jade');
@@ -23,8 +24,13 @@ gulp.task('browser-sync', function() {
 });
 
 gulp.task('jade', function() {
+    var viewData = {
+        devices: JSON.parse(fs.readFileSync('./src/devices.json', {encoding:'utf8'}))
+    };
     gulp.src('./src/**/*.jade')
-        .pipe(jade())
+        .pipe(jade({
+            locals: viewData
+        }))
         .pipe(gulp.dest('./'));
 });
 
@@ -39,5 +45,5 @@ gulp.task('default', ['sass', 'js', 'jade', 'browser-sync'], function () {
     gulp.watch("src/scss/*.scss", ['sass']);
     gulp.watch("js/*.js", ['js']);
     gulp.watch("*.html", ['bs-reload']);
-    gulp.watch("src/*.jade", ['jade']);
+    gulp.watch(["src/*.jade", 'src/**.json'], ['jade']);
 });

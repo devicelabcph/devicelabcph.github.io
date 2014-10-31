@@ -22,63 +22,13 @@ html(lang="en")
     .wishlist
       .wrapper
         h1 Wishlist
-        h3 Mobile
-        h4 Apple
-        ul
-           li iPhone 3
-           li iPhone 4 (4, 4s)
-           li iPhone 5 (5, 5c/s)
-        h4 Android
-        ul
-           li Galaxy S5
-           li Galaxy S4 (mini)
-           li Galaxy S3
-           li Galaxy S2
-           li Galaxy Note
-           li Google Nexus 4
-           li Google Nexus 5
-           li HTC One M8
-           li HTC One (mini)
-           li Sony Xperia Z1
-        h4 Windows
-        ul
-           li Nokia Lumia 630
-           li Nokia Lumia 925
-        h4 BlackBerry
-        ul
-           li BlackBerry Q10
-           li BlackBerry Z10
-        h4 Firefox OS
-        ul
-           li Alcatel One Touch Fire
-        h3 Tablets
-        h4 Apple
-        ul
-           li iPad 3
-           li iPad 4
-           li iPad mini
-        h4 Android
-        ul
-           li Google Nexus 10 by Samsung
-           li Samsung Galaxy Tab 2
-           li Asus Nexus 7 (2012)
-           li Amazon Kindle Fire HD 7"
-        h4 Windows
-        ul
-           li Microsoft Surface (Pro)
-           li Sony Vaio Tap 20
-           li Lenovo IdeaTab Lynx K3011
-        h4 BlackBerry
-        ul
-           li BlackBerry PlayBook
-        h3 Other fun devices
-        ul
-           li Google Glass
-           li Sony PSP
-           li XBox 360
-           li Jolla 1
-           li Leap Motion
-           li Raspberry Pi
+        each types, name in devices
+          h3= name
+          each products, producer  in types
+            h4= producer
+            each product in products
+              li= product 
+
     .donate
       .wrapper
         a(href="#") Donate your device
