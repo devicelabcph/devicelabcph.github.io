@@ -1,3 +1,21 @@
 .donate {
-  background: #ededed;
+  background: url('../img/hero_bg.svg') #394555;
+  height: 100vh;
+  text-align: center;
+  color: #fff;
+  .container {
+    max-width: 40rem;
+    p {
+      font-size: 1.2rem;
+      padding-bottom: 2rem;
+    }
+  }
+  a {
+    background: #E14D4C;
+    color: #fff;
+    padding: 1rem;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    font-weight: bold;
+  }
 }

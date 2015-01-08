@@ -1,17 +1,20 @@
 .hero {
-  height: 55vh;
-  background: #EDEDED;
-  background-image: url(http://designtoimprovelife.dk/wp-content/uploads/2011/03/nyhavn.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
+  background: #fff;
+  height: 100vh;
+  text-align: center;
   h1 {
-    font-size: 3.5em;
+    font-size: 1.2rem;
+    text-transform: uppercase;
     margin: 0;
-    padding: 60px 0 0;
-    color: #FF4136;
+    margin-top: 1rem;
+    padding: 0;
+    color: #312C2C;
+    span {
+      font-weight: normal;
+    }
   }
-  h2 {
-    font-size: 2em;
+  i {
+    color: #666;
+    font-size: 1rem
   }
 }

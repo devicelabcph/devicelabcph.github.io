@@ -12,7 +12,7 @@ gulp.task('sass', function () {
 
 gulp.task('js', function () {
     return gulp.src('src/js/*js')
-        .pipe(gulp.dest('/js'));
+        .pipe(gulp.dest('./js'));
 });
 
 gulp.task('browser-sync', function() {
@@ -43,7 +43,7 @@ gulp.task('compile', ['sass', 'js', 'jade']);
 
 gulp.task('default', ['sass', 'js', 'jade', 'browser-sync'], function () {
     gulp.watch("src/scss/*.scss", ['sass']);
-    gulp.watch("js/*.js", ['js']);
+    gulp.watch("src/js/*.js", ['js']);
     gulp.watch("*.html", ['bs-reload']);
     gulp.watch(["src/*.jade", 'src/**.json'], ['jade']);
 });

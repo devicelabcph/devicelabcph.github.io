@@ -1,63 +1,54 @@
 {
-	"Mobile": {
+	"Wishlist": {
 		"Apple": [
-			"iPhone 3", 
-			"iPhone 4 (4, 4s)", 
-			"iPhone 5 (5, 5c/s)"
-		],
-		"Android": [
-			"Galaxy S5", 
-			"Galaxy S4 (mini)", 
-			"Galaxy S3", 
-			"Galaxy S2", 
-			"Galaxy Note", 
-			"Google Nexus 4",
-			"Google Nexus 5",
-			"HTC One M8",
-			"HTC One (mini)",
-			"Sony Xperia Z1"
-		],
-		"Windows": [
-			"Nokia Lumia 630", 
-			"Nokia Lumia 925"
-		],
-		"BlackBerry": [
-			"BlackBerry Q10",
-			"BlackBerry Z10"
-		],
-		"Firefox OS": [
-			"Alcatel One Touch Fire"
-		]
-	},
-	"Tablet": {
-		"Apple": [
+			"iPhone 3",
+			"iPhone 4 (4, 4s)",
+			"iPhone 5 (5, 5c/s)",
 			"iPad 3",
 			"iPad 4",
 			"iPad mini"
 		],
 		"Android": [
+			"Galaxy S5",
+			"Galaxy S4 (mini)",
+			"Galaxy S3",
+			"Galaxy S2",
+			"Galaxy Note",
+			"Google Nexus 4",
+			"Google Nexus 5",
+			"Google Nexus 6",
+			"HTC One M8",
+			"HTC One (mini)",
+			"Sony Xperia Z1",
+			"Google Nexus 9",
 			"Google Nexus 10",
 			"Samsung Galaxy Tab 2",
 			"Asus Nexus 7 (2012)",
 			"Amazon Kindle Fire HD 7\""
 		],
 		"Windows": [
+			"Nokia Lumia 630",
+			"Nokia Lumia 925",
 			"Microsoft Surface (Pro)",
 			"Sony Vaio Tap 20",
 			"Lenovo IdeaTab Lynx K3011"
 		],
 		"BlackBerry": [
+			"BlackBerry Q10",
+			"BlackBerry Z10",
 			"BlackBerry PlayBook"
-		]
-	},
-	"Other fun devices": {
+		],
+		"Firefox OS": [
+			"Alcatel One Touch Fire"
+		],
 		"Diverse": [
 			"Google Glass",
 			"Sony PSP",
 			"XBox 360",
 			"Jolla 1",
 			"Leap Motion",
-			"Raspberry Pi"
+			"Raspberry Pi",
+			"MYO"
 		]
 	}
 }

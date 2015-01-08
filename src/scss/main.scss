@@ -1,5 +1,7 @@
 @import "normalize";
 @import "grid";
+@import "colors";
+@import "nav";
 @import "hero";
 @import "description";
 @import "wishlist";
@@ -8,4 +10,5 @@
 
 body {
   background: white;
+  font-family: "Helvetica Neue", Arial, sans-serif;
 }
