@@ -12,7 +12,7 @@ if (is_touch_device() === true) {
     "background-color" : "#394555",
     "background-repeat" : "no-repeat",
     "background-position" : "center",
-    "background-image" : "url('../img/poster.png')",
+    "background-image" : "url('img/poster.png')",
     "background-size" : "cover"
   });
 }

@@ -64,24 +64,18 @@ tbody td {
   text-align: center;
   top: -3.25rem;
   font-size: 1.35rem;
-  color: #394555; }
+  color: #E14D4C; }
 
 @media screen and (min-width: 35.5em) {
   .hero--content {
-    position: relative;
-    text-align: center;
     top: -4.75rem;
-    font-size: 2rem;
-    color: #394555; }
+    font-size: 2rem; }
  }
 
 @media screen and (min-width: 48em) {
   .hero--content {
-    position: relative;
-    text-align: center;
     top: -9rem;
-    font-size: 4rem;
-    color: #394555; }
+    font-size: 4rem; }
  }
 
 .hero .btn-donate {
@@ -101,7 +95,7 @@ video {
   background-color: #394555;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("../img/poster.png");
+  background-image: url("img/poster.png");
   background-size: cover; }
 
 .description {
@@ -178,7 +172,7 @@ video {
   padding-top: 1rem;
   padding-bottom: 6rem; }
   .footer h4 {
-    color: #394555;
+    color: #E14D4C;
     font-family: "Inconsolata", sans-serif;
     letter-spacing: 0.05rem; }
   .footer .logo {
@@ -207,7 +201,7 @@ html, button, input, select, textarea, .pure-g [class*="pure-u"] {
   margin: 0 auto; }
 
 h3 {
-  color: #E14D4C;
+  color: #394555;
   font-family: "Inconsolata", sans-serif;
   letter-spacing: 0.05rem; }
 
