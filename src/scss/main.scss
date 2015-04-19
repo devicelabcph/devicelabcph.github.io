@@ -1,14 +1,40 @@
-@import "normalize";
-@import "grid";
 @import "colors";
 @import "nav";
+@import "buttons";
+@import "table";
 @import "hero";
 @import "description";
-@import "wishlist";
+@import "list-of-devices";
 @import "donate";
-@import "find";
+@import "location";
+@import "footer";
 
-body {
-  background: white;
-  font-family: "Helvetica Neue", Arial, sans-serif;
+html, body {
+  background: #fff;
+  color: #262626;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+html, button, input, select, textarea, .pure-g [class *= "pure-u"] {
+  font-family: "Karla", sans-serif;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+h3 {
+  color: #E14D4C;
+  font-family: "Inconsolata", sans-serif;
+  letter-spacing: 0.05rem;
+}
+
+a {
+  color: #394555;
+  font-family: "Inconsolata", sans-serif;
+  letter-spacing: 0.05rem;
 }

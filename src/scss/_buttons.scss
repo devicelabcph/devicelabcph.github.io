@@ -1,0 +1,21 @@
+.btn-donate {
+  display: none;
+  background: none;
+  border: 2px solid #E14D4C;
+  color: #E14D4C;
+  font-size: 1rem;
+  padding: 1rem;
+  text-decoration: none;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  &:focus, &:hover {
+    background: #E14D4C;
+    color: #fff;
+  }
+}
+
+@media screen and (min-width: 35.5em) {
+  .btn-donate {
+    display: block;
+  }
+}

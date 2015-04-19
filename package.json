@@ -8,7 +8,8 @@
     "browserify": "6.2.0",
     "gulp": "3.8.9",
     "gulp-jade": "^0.9.0",
-    "gulp-sass": "1.2.2"
+    "gulp-sass": "1.2.2",
+    "gulp-bower": "0.0.10"
   },
   "scripts": {
     "start": "gulp",

@@ -1,7 +1,19 @@
 .description {
-  color: #363636;
-  background: #fafafa;
-  height: 90vh;
-  font-size: 1.2rem;
-  text-align: center;
+  margin-top: -4rem;
+  padding-bottom: 3rem;
+}
+
+@media screen and (min-width: 35.5em) {
+  .description {
+    margin-top: -6rem;
+    padding-bottom: 3rem;
+  }
+}
+
+
+@media screen and (min-width: 48em) {
+  .description {
+    margin-top: -13rem;
+    padding-bottom: 3rem;
+  }
 }

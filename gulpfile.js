@@ -1,8 +1,14 @@
 var fs = require('fs');
 var gulp = require('gulp');
+var bower = require('gulp-bower');
 var sass = require('gulp-sass');
 var jade = require('gulp-jade');
 var browserSync = require('browser-sync');
+
+gulp.task('bower', function() {
+  return bower()
+    .pipe(gulp.dest('lib/'))
+});
 
 gulp.task('sass', function () {
     gulp.src('src/scss/main.scss')

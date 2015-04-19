@@ -1,20 +1,74 @@
 .hero {
-  background: #fff;
-  height: 100vh;
+  background-color: #fff;
+}
+
+.logo {
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+}
+
+.logo-centered {
+  font-size: 0.8rem;
+  max-width: 1140px;
+  margin: 0 auto;
+  float: left;
+  display: inline;
+  color: #fff;
+  .city {
+    font-weight: 400;
+  }
+}
+
+.hero--content {
+  position: relative;
   text-align: center;
-  h1 {
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    margin: 0;
-    margin-top: 1rem;
-    padding: 0;
-    color: #312C2C;
-    span {
-      font-weight: normal;
-    }
+  top: -3.25rem;
+  font-size: 1.35rem;
+  color: #394555;
+}
+
+@media screen and (min-width: 35.5em) {
+  .hero--content {
+    position: relative;
+    text-align: center;
+    top: -4.75rem;
+    font-size: 2rem;
+    color: #394555;
   }
-  i {
-    color: #666;
-    font-size: 1rem
+}
+
+
+@media screen and (min-width: 48em) {
+  .hero--content {
+    position: relative;
+    text-align: center;
+    top: -9rem;
+    font-size: 4rem;
+    color: #394555;
   }
+}
+
+.hero .btn-donate {
+  float: right;
+  margin-top: 1.5rem;
+}
+
+.video {
+  width: 100%;
+  max-height: 600px;
+  position: relative;
+  overflow: hidden;
+
+}
+
+video {
+  width: 100%;
+  height: auto;
+  position: relative;
+  background-color: #394555;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../img/poster.png");
+  background-size: cover;
 }

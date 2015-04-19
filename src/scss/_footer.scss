@@ -1,0 +1,28 @@
+.footer {
+  background: #151515;
+  color: #fff;
+  position: relative;
+  width: 100%;
+  display: block;
+  margin: 0;
+  padding: 0;
+  padding-top: 1rem;
+  padding-bottom: 6rem;
+  h4 {
+    color: #394555;
+    font-family: "Inconsolata", sans-serif;
+    letter-spacing: 0.05rem;
+  }
+  .logo {
+    color: #fff;
+    font-family: "Karla", sans-serif;
+    .city {
+      font-weight: 400;
+    }
+  }
+  a {
+    font-family: "Karla", sans-serif;
+    text-decoration: none;
+    color: #999;
+  }
+}

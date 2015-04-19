@@ -1,21 +1,41 @@
 .donate {
-  background: url('../img/hero_bg.svg') #394555;
-  height: 100vh;
-  text-align: center;
+  background: #161616;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
   color: #fff;
-  .container {
-    max-width: 40rem;
-    p {
-      font-size: 1.2rem;
-      padding-bottom: 2rem;
-    }
+  h3 {
+    color: #E14D4C;
   }
-  a {
-    background: #E14D4C;
-    color: #fff;
-    padding: 1rem;
-    text-decoration: none;
-    border-radius: 0.25rem;
-    font-weight: bold;
+  h4 {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #262626;
+  }
+}
+
+.step {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.number {
+  color: #fff;
+  font-weight: 700;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-right: 1rem;
+  p {
+    text-align: center;
+    max-width: 50%;
   }
 }
