@@ -120,6 +120,11 @@ video {
   padding-bottom: 3rem;
   overflow-x: scroll; }
 
+@media screen and (min-width: 48em) {
+  .list-of-devices {
+    overflow-x: hidden; }
+ }
+
 .donate {
   background: #161616;
   position: relative;
