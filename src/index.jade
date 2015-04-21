@@ -9,6 +9,15 @@ html(lang="en")
     link(href='http://fonts.googleapis.com/css?family=Inconsolata|Karla:400,700', rel='stylesheet', type='text/css')
     link(rel="stylesheet", href="css/main.css", type="text/css")
   body
+    #fb-root
+    script.
+      (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/da_DK/sdk.js#xfbml=1&version=v2.3";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
     .hero
       .logo
         .wrapper
@@ -110,7 +119,8 @@ html(lang="en")
             div(class="pure-u-1 pure-u-md-6-24")
               h3 Location
             div(class="pure-u-1 pure-u-sm-12-24")
-              p Open Device Lab Copenhagen is part of Founders House and is located at Startup Village, Njalsgade 19 D, 2300 Copenhagen S.
+              p Open Device Lab Copenhagen is part of Founders House and is located at
+              a(href="http://startupvillage.dk/") Startup Village
               p It is a short walk from Islands Brygge metro station.
               a(target="_blank" href="https://www.google.com/maps/place/Founders+House/@55.66648,12.580513,17z/data=!3m1!4b1!4m2!3m1!1s0x4652536a7450875d:0x3ba3cac58f88d601") View map
             div(class="pure-u-1 pure-u-sm-6-24")
@@ -160,6 +170,8 @@ html(lang="en")
             p Denmark
           div(class="pure-u-1 pure-u-sm-8-24 pure-u-md-12-24")
             h4 Say hi
+            p Like us on Facebook
+            .fb-like(data-href='http://www.odlcph.dk', data-layout='button', data-action='like', data-show-faces='false', data-share='false')
             p Follow us on Twitter
               a(target="_blank" href="https://twitter.com/odlcph/")  @odlcph
             p Send email to
