@@ -1,6 +1,10 @@
 # Open Device Lab Copenhagen
 
-Open Device Lab is going to be located at Founders House on Island Brygge.
+Open Device Lab is located at Founders House on Island Brygge.
+
+The address is:
+Njalsgade 19 D 2nd floor
+2300 Copenhagen S
 
 ## How to get started
 
