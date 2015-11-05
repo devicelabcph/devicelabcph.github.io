@@ -2,14 +2,17 @@
   "name": "devicelabcph.github.io",
   "version": "0.1.0",
   "description": "Open Device Lab Copenhagen",
-  "dependencies": {},
+  "dependencies": {
+    "swig": "^1.4.2"
+  },
   "devDependencies": {
     "browser-sync": "1.6.2",
     "browserify": "6.2.0",
     "gulp": "3.8.9",
     "gulp-jade": "^0.9.0",
     "gulp-sass": "1.2.2",
-    "gulp-bower": "0.0.10"
+    "gulp-bower": "0.0.10",
+    "gulp-swig": "^0.7.4"
   },
   "scripts": {
     "start": "gulp",

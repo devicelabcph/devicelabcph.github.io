@@ -2,6 +2,7 @@ var fs = require('fs');
 var gulp = require('gulp');
 var bower = require('gulp-bower');
 var sass = require('gulp-sass');
+var swig = require('gulp-swig');
 var jade = require('gulp-jade');
 var browserSync = require('browser-sync');
 
@@ -40,16 +41,24 @@ gulp.task('jade', function() {
         .pipe(gulp.dest('./'));
 });
 
+gulp.task('templates', function() {
+  gulp.src('./src/**/*.html')
+    .pipe(swig({
+        defaults: { cache: false }
+    }))
+    .pipe(gulp.dest('./'))
+});
+
 gulp.task('bs-reload', function () {
     browserSync.reload();
 });
 
-gulp.task('compile', ['sass', 'js', 'jade']);
+gulp.task('compile', ['sass', 'js', 'templates']);
 
 
-gulp.task('default', ['sass', 'js', 'jade', 'browser-sync'], function () {
+gulp.task('default', ['sass', 'js', 'templates', 'browser-sync'], function () {
     gulp.watch("src/scss/*.scss", ['sass']);
     gulp.watch("src/js/*.js", ['js']);
+    gulp.watch(["src/*.html"], ['templates']);
     gulp.watch("*.html", ['bs-reload']);
-    gulp.watch(["src/*.jade", 'src/**.json'], ['jade']);
 });
