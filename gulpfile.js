@@ -3,7 +3,7 @@ var gulp = require('gulp');
 var bower = require('gulp-bower');
 var sass = require('gulp-sass');
 var swig = require('gulp-swig');
-var jade = require('gulp-jade');
+//var jade = require('gulp-jade');
 var browserSync = require('browser-sync');
 
 gulp.task('bower', function() {
@@ -30,12 +30,12 @@ gulp.task('browser-sync', function() {
     });
 });
 
-gulp.task('jade', function() {
+gulp.task('swig', function() {
     var viewData = {
         devices: JSON.parse(fs.readFileSync('./src/devices.json', {encoding:'utf8'}))
     };
-    gulp.src('./src/**/*.jade')
-        .pipe(jade({
+    gulp.src('./src/**/*.html')
+        .pipe(swig({
             locals: viewData
         }))
         .pipe(gulp.dest('./'));
